@@ -1,16 +1,15 @@
-$deff: 'Roboto';
+$deff: "Outfit";
 
 // Brand Colors
-$crimson: #C41949;    // Crimson
-$success: #00AD62;    // Emerald
-$accent: #9A7C4B;     // Gold
-$text-dark: #1D1D1F;  // Near Black
-$text-muted: #6F6B6B; // Gray
-$black: #000000;      // Pure Black
-$white: #FFFFFF;      // Pure White
-$error: #F40004;      // Error Red
+$crimson: #c41949; // Crimson
+$success: #00ad62; // Emerald
+$accent: #9a7c4b; // Gold
+$text-dark: #1d1d1f; // Near Black
+$text-muted: #6f6b6b; // Gray
+$black: #000000; // Pure Black
+$white: #ffffff; // Pure White
+$error: #f40004; // Error Red
 $c1: #d4d4d4;
-
 
 // Media queries breakpoints for mixins
 $xsm: 375px;
@@ -44,8 +43,8 @@ $grid-gutter-width: 30px;
 $spacer: 1rem;
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 3,
@@ -64,4 +63,13 @@ $spacers: (
   18: $spacer * 16,
   19: $spacer * 17,
   20: $spacer * 18
-); 
+);
+
+$font-weight-lighter: lighter;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+$font-weight-black: 900;
