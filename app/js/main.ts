@@ -1,5 +1,5 @@
-import { sum } from "./modules/sum";
+import { initDropdown } from "./modules/initDropdown";
 
 window.addEventListener("DOMContentLoaded", () => {
-  console.log(sum(1, 2));
+  initDropdown();
 });
