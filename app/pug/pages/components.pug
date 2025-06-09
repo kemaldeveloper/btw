@@ -4,14 +4,14 @@ html(lang="en")
   block head
   include ../layout/_head
   body
-    .wrapper.d-flex.flex-column
+    .wrapper
       // Header
       - var activePage = 'Main'
       include ../layout/_header
 
       // Main
-      main.main.flex-grow-1.flex-shrink-1.pt-6
-        .container.d-flex.gap-3
+      main.main
+        .container.d-flex.gap-3.mb-6
           button.btn.btn-primary(type="button") Primary
           button.btn.btn-secondary(type="button") Secondary
           button.btn.btn-success(type="button") Success
@@ -21,6 +21,12 @@ html(lang="en")
           button.btn.btn-light(type="button") Light
           button.btn.btn-dark(type="button") Dark
           button.btn.btn-link(type="button") Link
+
+        .container
+          .d-inline-flex.flex-column.gap-3
+            .badge.text-bg-danger Popular
+            .badge.text-bg-success Product test
+            .badge.text-bg-warning Bestseller
 
       // Footer
       include ../layout/_footer

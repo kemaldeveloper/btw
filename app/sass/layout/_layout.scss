@@ -1,5 +1,10 @@
 // General layout styles go here 
 
+html,
+body {
+  height: 100%;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
