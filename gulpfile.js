@@ -50,7 +50,7 @@ const paths = {
 };
 
 const js = () => {
-  return src(`${paths.dev.js}/**/*.js`)
+  return src(`${paths.dev.js}/**/*.ts`)
     .pipe(plumber({ errorHandler: notify.onError("Error: <%= error.message %>") }))
     .pipe(webpackStream(getWebpackConfig({ mode: "development" }), webpack))
     .on("error", function (error) {
@@ -201,7 +201,7 @@ const startWatch = () => {
   watch([`${paths.dev.sass}/**/*.scss`, `!${paths.dev.sass}/libs/libs.scss`], { usePolling: true }, css);
   watch(`${paths.dev.pug}/**/*.pug`, { usePolling: true }, html);
   watch(
-    [`${paths.dev.js}/main.js`, `${paths.dev.js}/modules/*.js`, `${paths.dev.js}/helpers/*.js`],
+    [`${paths.dev.js}/main.ts`, `${paths.dev.js}/modules/*.ts`, `${paths.dev.js}/helpers/*.ts`],
     { usePolling: true },
     js
   );
