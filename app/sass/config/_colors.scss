@@ -1,6 +1,5 @@
-// Add custom colors 
-$custom-colors: ('custom': red);
-$theme-colors: map-merge($theme-colors, $custom-colors);
+$custom-colors: (
+  "main": $main-bg
+);
 
-// Remove default colors
-// $theme-colors: map-remove($theme-colors, 'primary', 'secondary', 'success'); 
+$theme-colors: map-merge($theme-colors, $custom-colors);

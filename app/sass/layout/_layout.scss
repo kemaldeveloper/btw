@@ -4,6 +4,12 @@ html,
 body {
   height: 100%;
   font-family: $deff, sans-serif;
+  line-height: $body-line-height;
+}
+
+body {
+  background-color: $main-bg;
+  color: $white;
 }
 
 .wrapper {
