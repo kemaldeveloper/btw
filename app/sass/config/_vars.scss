@@ -7,10 +7,10 @@ $white: #ffffff;
 $main-bg: #1d1d1f;
 $crimson: #c41949;
 $success: #00ad62;
-$accent: #9a7c4b;
-$text-muted: #6f6b6b;
+$warning: #9a7c4b;
+$muted: #6f6b6b;
 $error: #f40004;
-$c1: #d4d4d4;
+$gray: #d4d4d4;
 
 // Media queries breakpoints for mixins
 $xsm: 375px;
@@ -129,3 +129,12 @@ $navbar-dark-hover-color: $white;
 $nav-link-padding-y: 0;
 $nav-link-font-size: 15px;
 $nav-link-color: $white;
+
+// Badges
+$badge-font-size: 10px;
+
+// Buttons
+$btn-font-size: 15px;
+$btn-font-weight: 800;
+$btn-padding-y: 8.3px;
+$btn-padding-x: 19.4px;

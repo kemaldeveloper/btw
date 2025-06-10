@@ -1,6 +1,6 @@
 include ../layout/_mixins
 doctype html
-html(lang="en")
+html(lang="en" data-bs-theme="dark")
   block head
   include ../layout/_head
   body
@@ -10,7 +10,7 @@ html(lang="en")
       include ../layout/_header
 
       // Main
-      main.main
+      main.main.py-10
         .container.d-flex.gap-3.mb-6
           button.btn.btn-primary(type="button") Primary
           button.btn.btn-secondary(type="button") Secondary
@@ -22,11 +22,50 @@ html(lang="en")
           button.btn.btn-dark(type="button") Dark
           button.btn.btn-link(type="button") Link
 
+        .container.mb-6.d-flex.gap-3
+          button.btn.btn-black.text-uppercase(type="button") View Product
+          button.btn.btn-outline-light.text-uppercase(type="button") View Product
+
+        .container.mb-6
+          .d-inline-flex.gap-3
+            .badge.text-uppercase.text-black.bg-crimson.fw-extra-bold Popular
+            .badge.text-uppercase.text-black.bg-success.fw-extra-bold Product test
+            .badge.text-uppercase.text-black.bg-warning.fw-extra-bold Bestseller
+
+        .container.d-flex.flex-column.gap-3
+          h1 Trust in 
+            span Every 
+            | Dose.
+          h1 Typography-1
+          h2 Typography-2
+          h3 Typography-3
+          h4 Typography-4
+          h5 Typography-5
+          h6 Typography-6
+
+          .body
+            p Body
+
         .container
-          .d-inline-flex.flex-column.gap-3
-            .badge.text-bg-danger Popular
-            .badge.text-bg-success Product test
-            .badge.text-bg-warning Bestseller
+          .d-inline-flex.align-items-center.gap-1
+            .d-inline-flex.align-items-center.gap-1.lh-1
+              .text-danger.d-flex.align-items-center.justify-content-center
+                +icon('star')
+              .text-danger.d-flex.align-items-center.justify-content-center
+                +icon('star')
+              .text-danger.d-flex.align-items-center.justify-content-center
+                +icon('star')
+              .text-danger.d-flex.align-items-center.justify-content-center
+                +icon('star')
+              .text-danger.d-flex.align-items-center.justify-content-center
+                +icon('star')
+            span.fs-16.text-muted.lh-1 4.7 (14)
+
+        .container
+          .select
+            .select__input
+            .select__dropdown
+
 
       // Footer
       include ../layout/_footer

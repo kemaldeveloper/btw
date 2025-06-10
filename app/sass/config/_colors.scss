@@ -1,5 +1,6 @@
 $custom-colors: (
-  "main": $main-bg
+  "main": $main-bg,
+  "crimson": $crimson
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
