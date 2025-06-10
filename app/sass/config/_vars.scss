@@ -1,14 +1,15 @@
 $deff: "Outfit";
+$body-line-height: 1.2;
 
 // Brand Colors
-$crimson: #c41949; // Crimson
-$success: #00ad62; // Emerald
-$accent: #9a7c4b; // Gold
-$text-dark: #1d1d1f; // Near Black
-$text-muted: #6f6b6b; // Gray
-$black: #000000; // Pure Black
-$white: #ffffff; // Pure White
-$error: #f40004; // Error Red
+$black: #000000;
+$white: #ffffff;
+$main-bg: #1d1d1f;
+$crimson: #c41949;
+$success: #00ad62;
+$accent: #9a7c4b;
+$text-muted: #6f6b6b;
+$error: #f40004;
 $c1: #d4d4d4;
 
 // Media queries breakpoints for mixins
@@ -32,37 +33,57 @@ $xl_maxw: 1140px;
 
 // Extra Large ≥1440px
 $xxl: 1440px;
-$xxl_maxw: 1380px;
-
-// Extra Large ≥1440px
-$xxxl: 1600px;
+$xxl_maxw: 1194px;
 
 // Bootstrap
 $grid-gutter-width: 30px;
 
+// Container
+$grid-breakpoints: (
+  xs: 0,
+  sm: $sm,
+  md: $md,
+  lg: $lg,
+  xl: $xl,
+  xxl: $xxl
+);
+
+$container-max-widths: (
+  sm: $sm_maxw,
+  md: $md_maxw,
+  lg: $lg_maxw,
+  xl: $xl_maxw,
+  xxl: $xxl_maxw
+);
+
+$max-widths: (
+  21: 21px
+);
+
+// Container padding
 $spacer: 1rem;
 $spacers: (
   0: 0,
   1: $spacer * 0.25,
   2: $spacer * 0.5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
-  6: $spacer * 4,
-  7: $spacer * 5,
-  8: $spacer * 6,
-  9: $spacer * 7,
-  10: $spacer * 8,
-  11: $spacer * 9,
-  12: $spacer * 10,
-  13: $spacer * 11,
-  14: $spacer * 12,
-  15: $spacer * 13,
-  16: $spacer * 14,
-  17: $spacer * 15,
-  18: $spacer * 16,
-  19: $spacer * 17,
-  20: $spacer * 18
+  3: $spacer * 0.75,
+  4: $spacer * 1,
+  5: $spacer * 1.25,
+  6: $spacer * 1.5,
+  7: $spacer * 1.75,
+  8: $spacer * 2,
+  9: $spacer * 2.25,
+  10: $spacer * 2.5,
+  11: $spacer * 2.75,
+  12: $spacer * 3,
+  13: $spacer * 3.25,
+  14: $spacer * 3.5,
+  15: $spacer * 3.75,
+  16: $spacer * 4,
+  17: $spacer * 4.25,
+  18: $spacer * 4.5,
+  19: $spacer * 4.75,
+  20: $spacer * 5
 );
 
 $font-weight-lighter: lighter;
@@ -73,3 +94,13 @@ $font-weight-semibold: 600;
 $font-weight-bold: 700;
 $font-weight-extra-bold: 800;
 $font-weight-black: 900;
+
+// Navs
+$navbar-dark-color: $white;
+$navbar-nav-link-padding-x: 0;
+$navbar-dark-active-color: $error;
+$navbar-padding-y: 6px;
+$navbar-dark-hover-color: $white;
+$nav-link-padding-y: 0;
+$nav-link-font-size: 15px;
+// $navbar-padding-y: 0;
