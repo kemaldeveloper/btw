@@ -19,6 +19,17 @@ $utilities: map-merge(
       property: max-width,
       class: mw,
       values: $max-widths
+    ),
+    "line-height": (
+      property: line-height,
+      class: lh,
+      values: $line-heights
+    ),
+    "font-size": (
+      rfs: true,
+      property: font-size,
+      class: fs,
+      values: $font-sizes
     )
   )
 );
