@@ -57,7 +57,9 @@ $container-max-widths: (
 );
 
 $max-widths: (
-  21: 21px
+  21: 21px,
+  154: 154px,
+  229: 229px
 );
 
 // Container padding
@@ -86,6 +88,29 @@ $spacers: (
   20: $spacer * 5
 );
 
+$font-sizes: (
+  13: 13px,
+  14: 14px,
+  15: 15px,
+  16: 16px,
+  17: 17px,
+  18: 18px,
+  19: 19px,
+  20: 20px
+);
+
+$line-height-base: 1.5;
+$line-height-sm: 1.25;
+$line-height-lg: 2;
+
+$line-heights: (
+  1: 1,
+  30: 30px,
+  sm: $line-height-sm,
+  base: $line-height-base,
+  lg: $line-height-lg
+);
+
 $font-weight-lighter: lighter;
 $font-weight-light: 300;
 $font-weight-normal: 400;
@@ -103,4 +128,4 @@ $navbar-padding-y: 6px;
 $navbar-dark-hover-color: $white;
 $nav-link-padding-y: 0;
 $nav-link-font-size: 15px;
-// $navbar-padding-y: 0;
+$nav-link-color: $white;
